@@ -1,0 +1,38 @@
+{
+  "name": "genpark-git-semantic-merge-conflict-resolver-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Semantic Git merge conflict resolver analyzing AST changes across diverging branches to generate validated syntax-clean auto-merges.",
+  "author": "genpark",
+  "category": "engineering",
+  "tags": [
+    "git-merge",
+    "conflict-resolution",
+    "ast-merge",
+    "semantic-diff",
+    "code-rebase"
+  ],
+  "inputs": {
+    "base_branch": {
+      "type": "string"
+    },
+    "incoming_branch": {
+      "type": "string"
+    },
+    "conflict_files": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "resolved_files": {
+      "type": "array"
+    },
+    "merge_verdict": {
+      "type": "string"
+    },
+    "confidence_score": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
